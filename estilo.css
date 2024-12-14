@@ -14,7 +14,7 @@
         /* *********************/
         
         #inicio {
-            background: linear-gradient( rgba(4, 0, 42, .7), rgba(4, 0, 42, .7)), url("img/fondo-nuevo.jpg");
+            background: linear-gradient( rgba(4, 0, 42, .7), rgba(4, 0, 42, .7)), url("img/fondo.jpg");
             background-size: cover;
             background-position: center center;
             height: 100vh;
@@ -408,9 +408,11 @@
         
         #portfolio {
             max-width: 1100px;
-            padding: 100px 0;
+            padding: 0px 0;
             margin: auto;
         }
+
+       
         
         #portfolio .titulo-seccion {
             text-align: center;
