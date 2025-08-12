@@ -61,6 +61,7 @@
             <p>Técnico Superior Universitario en Entornos Virtuales y Negocios Digitales con conocimientos y experiencia en Programación destinada a Videojuegos, Metaversos, Edición de Video, Realidad Aumentada (AR) y Realidad Virtual (VR), creando proyectos para fines propios y académicos.</p>
             <p>Busco mejorar mi desempeño laboral y profesional proporcionando mis habilidades en C#, Unity, Spatial, Vuforia Engine, ARFoundation, Google Cardboard, SteamVR y Producción Audiovisual para lograr resultados finales que cumplan con los requerimientos y gustos de los clientes con los que trabajo.</p>
             <a href="pdf/CV_Gaspar Humberto Valdez Avila.pdf" download="CV_Gaspar Humberto Valdez Avila">Descargar CV</a>
+            <a href="https://www.youtube.com/watch?v=txjclIsLWno" target="_blank">Ver Demo Reel</a>
         </div>
     </section>
 
@@ -108,8 +109,8 @@
             </div>
         </div>
     </section>
+<br><br><br><br><br>
 
-    <br><br><br><br><br>
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio">
         <h3 class="titulo-seccion">Videojuegos</h3>
@@ -319,29 +320,31 @@
         </div>
     </section>
 
+    
+
     <br><br><br><br><br>
-    <section id="contacto">
-        <h3 class="titulo-seccion">Contáctame</h3>
-        <div class="contenedor-form">
-            <form id="contact-form" action="https://formsubmit.co/gasparvaldezavila@gmail.com" method="POST">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Escribe tu nombre completo..." class="input-mitad" name="name" required>
-                    <input type="email" placeholder="Escribe tu correo electrónico..." class="input-mitad" name="email" required>
-                </div>
-                <div class="fila">
-                    <input type="text" placeholder="Escribe el asunto..." class="input-full" name="subject" required>
-                </div>
-                <div class="fila">
-                    <textarea name="comments" cols="30" rows="10" placeholder="Escribe tu mensaje..." class="input-full" required></textarea>
-                </div>
+   <section id="contacto">
+  <h3 class="titulo-seccion">Contáctame</h3>
+  <div class="contenedor-form">
+    <form id="contact-form" action="https://formsubmit.co/gasparvaldezavila@gmail.com" method="POST">
+      <div class="fila mitad">
+        <input type="text" placeholder="Escribe tu nombre completo..." class="input-mitad" name="name" required>
+        <input type="email" placeholder="Escribe tu correo electrónico..." class="input-mitad" name="email" required>
+      </div>
+      <div class="fila">
+        <input type="text" placeholder="Escribe el asunto..." class="input-full" name="subject" required>
+      </div>
+      <div class="fila">
+        <textarea name="comments" cols="30" rows="10" placeholder="Escribe tu mensaje (puedes incluir tu número de teléfono)..." class="input-full" required></textarea>
+      </div>
 
-                <input type="submit" value="Enviar mensaje" class="btn-enviar" id="submitBtn">
+      <input type="submit" value="Enviar mensaje" class="btn-enviar" id="submitBtn">
 
-                <input type="hidden" name="_next" value="https://gasparvaldez.github.io/PortafolioGasparValdez/">
-                <input type="hidden" name="_captcha" value="false">
-            </form>
-        </div>
-    </section>
+      <input type="hidden" name="_next" value="https://gasparvaldez.github.io/PortafolioGasparValdez/">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </div>
+</section>
 
   
     <footer>
@@ -349,6 +352,7 @@
         <div class="redes-footer">
             <a href="https://gaspar-valdez.itch.io/ " target="_blank"><i class="fa-brands fa-itch-io"></i></a>
             <a href="https://www.facebook.com/gaspi.jackson/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+             <a href="http://www.linkedin.com/in/gaspar-valdez-872113304" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.instagram.com/gaspivaldez0/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
             <a href="mailto:gasparvaldezavila@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
         </div>
@@ -356,36 +360,45 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var submitBtn = document.getElementById("submitBtn");
-            submitBtn.addEventListener("click", function(event) {
-                event.preventDefault(); 
-    
-               
-                var nameInput = document.getElementsByName("name")[0];
-                var emailInput = document.getElementsByName("email")[0];
-                var subjectInput = document.getElementsByName("subject")[0];
-                var commentsInput = document.getElementsByName("comments")[0];
-    
-                if (nameInput.value.trim() === "" || emailInput.value.trim() === "" || subjectInput.value.trim() === "" || commentsInput.value.trim() === "") {
-                    alert("Por favor, completa todos los campos del formulario.");
-                    return;
-                }
-                
-              
-                document.getElementById("contact-form").submit();
-    
-                setTimeout(function() {
-                    alert("¡Datos enviados! ¡Gracias por ponerte en contacto conmigo!");
-                }, 1000);
-    
-                setTimeout(function() {
-                    window.location.href = "https://gasparvaldez.github.io/PortafolioGasparValdez/";
-                }, 2000);
-            });
-        });
-    </script>
+   <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      var nameInput = form.elements["name"];
+      var emailInput = form.elements["email"];
+      var subjectInput = form.elements["subject"];
+      var commentsInput = form.elements["comments"];
+
+      // Validar campos vacíos
+      if (
+        nameInput.value.trim() === "" ||
+        emailInput.value.trim() === "" ||
+        subjectInput.value.trim() === "" ||
+        commentsInput.value.trim() === ""
+      ) {
+        alert("Por favor, completa todos los campos del formulario.");
+        return;
+      }
+
+      // Validar formato del email con regex simple
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value.trim())) {
+        alert("Por favor, ingresa un correo electrónico válido.");
+        emailInput.focus();
+        return;
+      }
+
+      // Mostrar mensaje de éxito antes de enviar
+      alert("¡Datos enviados! ¡Gracias por ponerte en contacto conmigo!");
+
+      // Enviar formulario (se hace después del alert para que el usuario pueda verlo)
+      form.submit();
+    });
+  });
+</script>
 </body>
 
 </html>
