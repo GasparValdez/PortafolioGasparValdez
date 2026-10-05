@@ -1,1 +1,444 @@
-<h1>hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>Gaspar Valdez - Portafolio</title>
+</head>
+
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <a href="#inicio"><img src="img/logo.png"alt="" width="35px" height="35px"></a>
+                    <nav id="nav" class="">
+                        <ul id="links" style="margin-left: 1px;">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                 
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        
+                    </div>
+                    
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Gaspar Valdez</span>- CEO de KreaVerse, Desarrollador de Videojuegos y Tecnología Inmersiva</h2>
+                <p class="descripcion" style="font-style: italic;">"Tecnología con propósito, ideas con impacto."</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/fotocasual1.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Gaspar Valdez</span> </h2>
+            <h3>CEO de KreaVerse, Desarrollador de videojuegos y tecnología inmersiva</h3>
+            <p>Técnico Superior Universitario e Ingeniero en Entornos Virtuales y Negocios Digitales, CEO de KreaVerse y 5 años de experiencia en la docencia de la tecnología y con conocimientos en la Programación destinada a Videojuegos, Metaversos, Metodología de Software, Analítica de Negocio, Edición de Video, Realidad Aumentada (AR) y Realidad Virtual (VR), creando proyectos para fines propios y académicos.</p>
+            <p>Busco mejorar mi desempeño laboral y profesional proporcionando mis habilidades en C#, Unity, Godot Engine, Spatial, Vuforia Engine, ARCore, ARFoundation, OpenXR (Meta Quest), Google Cardboard, Photon, SteamVR, Apache Superset y Producción Audiovisual para lograr resultados finales que cumplan con los requerimientos y gustos de los clientes y/o estudiantes con los que trabajo.</p>
+            <a href="pdf/CV_Gaspar Humberto Valdez Avila_ESP.pdf" download="CV_Gaspar Humberto Valdez Avila">Descargar CV (Español)</a>
+            <a href="pdf/CV_Gaspar Humberto Valdez Avila_ENG.pdf" download="CV_Gaspar Humberto Valdez Avila">Download CV (English)</a>
+            <a href="https://www.youtube.com/watch?v=txjclIsLWno" target="_blank">Ver Demo Reel</a>
+        </div>
+    </section>
+
+    
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-unity fa-lg" style="color: #ffffff;"></i></span>
+                <h4>Unity</h4>
+                <hr>
+                <p>Desarrollo videojuegos 2D y 3D para diversas plataformas, incluyendo Móviles, Windows, Linux, MacOS y HTML5. Orientado a géneros como de estrategia, educativos, multijugador y más.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code" style="color: #ffffff;"></i></span>
+                <h4>Programación en C#</h4>
+                <hr>
+                <p>Desarrollo programas de escritorio con formularios de Windows, al igual que videojuegos y/o aplicaciones enfocado a Unity.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-mobile-screen-button fa-lg" style="color: #ffffff;"></i></span>
+                <h4>Realidad Aumentada (AR)</h4>
+                <hr>
+                <p>Creo aplicaciones y videojuegos utilizando Vuforia Engine y ARFoundation para experiencias interactivas entre el mundo digital y el mundo real.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-vr-cardboard" style="color: #ffffff;"></i></span>
+                <h4>Realidad Virtual (VR)</h4>
+                <hr>
+                <p>Diseño aplicaciones y videojuegos para experiencias inmersivas en entornos digitales utilizando SteamVR, OpenXR (Meta Quest) y Google Cardboard.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-users" style="color: #ffffff;"></i></span>
+                <h4>Desarrollo de Metaversos</h4>
+                <hr>
+                <p>Creo y desarrollo entornos digitales con mecánicas innovadoras para cualquier uso con capacidad para múltiples usuarios conectados utilizando Spatial.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-film fa-lg" style="color: #ffffff;"></i></span>
+                <h4>Edición de Video</h4>
+                <hr>
+                <p>Transformo y moldeo historias a través de un reproductor. Diseño y desarrollo producciones audiovisuales para fines personales o publicitarios, utilizando Camtasia Studio 9, Adobe Premiere, Adobe After Effects y Filmora.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-user-graduate" style="color: #ffffff;"></i></span>
+                <h4>Docencia en Tecnología</h4>
+                <hr>
+                <p>Con 5 años de experiencia como profesor, imparto formación especializada en el desarrollo de entornos digitales y multimedia. Diseño planes de aprendizaje prácticos para que los estudiantes dominen herramientas de vanguardia y metodologías de software profesionales.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-chart-line" style="color: #ffffff;"></i></span>
+                <h4>Analítica de Negocio</h4>
+                <hr>
+                <p>Gestiono y analizo grandes volúmenes de datos para la toma de decisiones. Interpreto tablas complejas y las transformo en visualizaciones gráficas interactivas mediante Apache Superset, facilitando la lectura de métricas clave y el monitoreo de rendimiento.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-server" style="color: #ffffff;"></i></span>
+                <h4>Sistemas Multijugador</h4>
+                <hr>
+                <p>Implemento arquitecturas de red en tiempo real utilizando Photon Networking. Desarrollo lógicas de sincronización de datos, gestión de salas y comunicación entre usuarios para garantizar experiencias interactivas fluidas en entornos multijugador y metaversos.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-gamepad" style="color: #ffffff;"></i></span>
+                <h4>Godot Engine</h4>
+                <hr>
+                <p>Desarrollo videojuegos y aplicaciones interactivas de alto rendimiento utilizando GDScript. Aprovecho la arquitectura de nodos de Godot para crear prototipos rápidos y proyectos optimizados, ofreciendo soluciones eficientes y de código abierto para diversas plataformas.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-github" style="color: #ffffff;"></i></span>
+                <h4>Control de Versiones y Repositorios</h4>
+                <hr>
+                <p>Gestiono y organizo el ciclo de vida del código y los recursos de proyectos colaborativos. Implemento flujos de trabajo eficientes, control de ramas y resolución de conflictos utilizando Git, GitHub, GitHub Desktop y Sourcetree, garantizando la trazabilidad, seguridad y estabilidad de las versiones en desarrollo.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-openai" style="color: #ffffff;"></i></span>
+                <h4>Inteligencia Artificial para Desarrollo</h4>
+                <hr>
+                <p>Integro modelos y herramientas de IA generativa (ChatGPT, Gemini, Grok y Claude) para optimizar el flujo de trabajo técnico. Acelero procesos de prototipado rápido, asistencia en scripting, refactorización y resolución de errores, así como la ideación y documentación técnica para potenciar la productividad en cada etapa del proyecto.</p>
+            </div>
+        </div>
+    </section>
+<br><br><br><br><br>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Videojuegos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/balam-runner" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.png" alt="">
+                <div class="info">
+                    <h4>Balam Runner</h4>
+                    <p>¡Salva al medio ambiente de una forma veloz! - Ganador del tercer lugar en la Game Jam de Yucatán i6 2024.</p>
+                </div>
+            </a>
+            </div>
+            
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/yucapawn" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto7.png" alt="">
+                <div class="info">
+                    <h4>YucaPAWN</h4>
+                    <p>¡Prepárate para una aventura llena de desafíos mijo!</p>
+                </div>
+             </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/the-maze-reuploaded" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto8.png" alt="">
+                <div class="info">
+                    <h4>The Maze Reuploaded</h4>
+                    <p>¡Completa los 3 niveles sin tocar las paredes!</p>
+                </div>
+             </a>
+            </div>
+           
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/notrash-adventure" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.png" alt="">
+                <div class="info">
+                    <h4>NoTrash Adventure</h4>
+                    <p>¡Sé el héroe del medio ambiente! - ¡Prueba el nuevo DLC: Zero Waste!</p>
+                </div>
+            </a>
+            </div>
+            
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/rocket-breaker" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.png" alt="">
+                <div class="info">
+                    <h4>Rocket-Breaker!</h4>
+                    <p>¡Viaja al espacio con un objetivo!</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/mayagrama" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.png" alt="">
+                <div class="info">
+                    <h4>MayaGrama</h4>
+                    <p>¡Aprender Maya nunca fue tan divertido!</p>
+                </div>
+            </a>
+            </div>
+           
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/notrash-adventure-ecodash" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto16.png" alt="">
+                <div class="info">
+                    <h4>NoTrash Adventure: EcoDash</h4>
+                    <p>¡Adéntrate en la nueva aventura de Clend y sus amigos ambientales!</p>
+                </div>
+            </a>
+            </div>
+            
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/el-ltimo-piso" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto15.png" alt="">
+                <div class="info">
+                    <h4>El Último Piso</h4>
+                    <p>No querrás ver lo que se encuentra ahí...</p>
+                </div>
+            </a>
+            </div>
+          
+           
+        </div>
+    </section>
+
+   
+
+
+<br><br><br><br><br>
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">APLICACIONES VR, AR Y METAVERSOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/yucatour-vr" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.png" alt="">
+                <div class="info">
+                    <h4>YucaTour VR</h4>
+                    <p>¡Vive la mejor experiencia turística de Yucatán en VR!</p>
+                </div>
+            </a>
+            </div>
+            
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/safari-ar" target="_blank">
+                    <div class="overlay"></div>
+                    <img src="img/proyecto2.png" alt="">
+                    <div class="info">
+                        <h4>Safari AR</h4>
+                        <p>¡Explora y aprende del mundo animal a otro nivel!</p>
+                    </div>
+             </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://gaspar-valdez.itch.io/magic-menu" target="_blank">
+                    <div class="overlay"></div>
+                    <img src="img/proyecto3.png" alt="">
+                    <div class="info">
+                        <h4>Magic Menu</h4>
+                        <p>¡Ordena comida de una forma innovadora!
+                        </p>
+                    </div>
+             </a>
+            </div>
+           
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://acortar.link/kaTGoj" target="_blank">
+                    <div class="overlay"></div>
+                    <img src="img/proyecto14.png" alt="">
+                    <div class="info">
+                        <h4>Metaverso - Plaza Fundadores SLP - México - Marco Virtual MX</h4>
+                        <p>¡Conoce San Luis Potosí: San Luis Potosí, fundada en 1592, destaca por su arquitectura colonial y rica historia minera!
+                        </p>
+                    </div>
+            </a>
+            </div>
+            
+            <div class="proyecto">
+                <a href="https://vtc-back.pages.dev/" target="_blank">
+                    <div class="overlay"></div>
+                    <img src="img/proyecto17.jpg" alt="">
+                    <div class="info">
+                        <h4>Metaverso - VARTICA Metaverse</h4>
+                        <p>¡Un museo digital inmersivo creado para artistas que buscan exhibir su trabajo en un espacio innovador y sin limitaciones geográficas!
+                        </p>
+                    </div>
+            </a>
+            </div>
+           
+        </div>
+    </section>
+  
+    <br><br><br><br><br>
+     <!-- SECCION PORTAFOLIO -->
+     <section id="portfolio">
+        <h3 class="titulo-seccion">Videos Editados</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://acortar.link/wiVg1J" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto11.png" alt="">
+                <div class="info">
+                    <h4>Thanksgiving: The First Harvest of October</h4>
+                    <p>¡Una interpretación animada sobre la historia del Día de Acción de Gracias!</p>
+                </div>
+            </a>
+            </div>
+            
+            <div class="proyecto">
+                <a href="https://acortar.link/0xAgFb" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto12.png" alt="">
+                <div class="info">
+                    <h4>Hanal Pixán Trip</h4>
+                    <p>¡Un documental sobre la historia y significado de la tradición emblemática de Yucatán recreado en Minecraft!</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="proyecto">
+                <a href="https://acortar.link/GJrTJb" target="_blank">
+                <div class="overlay"></div>
+                <img src="img/proyecto13.png" alt="">
+                <div class="info">
+                    <h4>The current situation of the Maize trade in Mexico and in the world</h4>
+                    <p>¡Un documental informativo acerca de la situación actual del maíz en México y en el mundo!</p>
+                </div>
+            </a>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+    <br><br><br><br><br>
+   <section id="contacto">
+  <h3 class="titulo-seccion">Contáctame</h3>
+  <div class="contenedor-form">
+    <form id="contact-form" action="https://formsubmit.co/gasparvaldezavila@gmail.com" method="POST">
+      <div class="fila mitad">
+        <input type="text" placeholder="Escribe tu nombre completo..." class="input-mitad" name="name" required>
+        <input type="email" placeholder="Escribe tu correo electrónico..." class="input-mitad" name="email" required>
+      </div>
+      <div class="fila">
+        <input type="text" placeholder="Escribe el asunto..." class="input-full" name="subject" required>
+      </div>
+      <div class="fila">
+        <textarea name="comments" cols="30" rows="10" placeholder="Escribe tu mensaje (puedes incluir tu número de teléfono)..." class="input-full" required></textarea>
+      </div>
+
+      <input type="submit" value="Enviar mensaje" class="btn-enviar" id="submitBtn">
+
+      <input type="hidden" name="_next" value="https://gasparvaldez.github.io/PortafolioGasparValdez/">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </div>
+</section>
+
+  
+    <footer>
+        <p>Gaspar Valdez - 2026</p>
+        <div class="redes-footer">
+            <a href="https://gaspar-valdez.itch.io/ " target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://www.facebook.com/gaspi.jackson/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+             <a href="http://www.linkedin.com/in/gaspar-valdez-872113304" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/gaspivaldez0/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="mailto:gasparvaldezavila@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+   <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      var nameInput = form.elements["name"];
+      var emailInput = form.elements["email"];
+      var subjectInput = form.elements["subject"];
+      var commentsInput = form.elements["comments"];
+
+      // Validar campos vacíos
+      if (
+        nameInput.value.trim() === "" ||
+        emailInput.value.trim() === "" ||
+        subjectInput.value.trim() === "" ||
+        commentsInput.value.trim() === ""
+      ) {
+        alert("Por favor, completa todos los campos del formulario.");
+        return;
+      }
+
+      // Validar formato del email con regex simple
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value.trim())) {
+        alert("Por favor, ingresa un correo electrónico válido.");
+        emailInput.focus();
+        return;
+      }
+
+      // Mostrar mensaje de éxito antes de enviar
+      alert("¡Datos enviados! ¡Gracias por ponerte en contacto conmigo!");
+
+      // Enviar formulario (se hace después del alert para que el usuario pueda verlo)
+      form.submit();
+    });
+  });
+</script>
+</body>
+
+</html>
